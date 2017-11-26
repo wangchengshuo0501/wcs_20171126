@@ -83,7 +83,7 @@ if __name__ == '__main__':
     suite.addTest(ApiTest("test_delent_activity"))
     filename = r'/usr/local/test/wang.html'
     print filename
-    fp = open(filename,'wb')
+    fp = open(filename,'wr')
     runner = htmltestrunner.HTMLTestRunner(
         stream=fp,
         title='testresult',
