@@ -81,7 +81,7 @@ if __name__ == '__main__':
     #unittest.main()
     suite = unittest.TestSuite()
     suite.addTest(ApiTest("test_delent_activity"))
-    filename = r'/var/lib/jenkins/workspace/test_wcs_20171126/api/wang.html'
+    filename = r'/usr/local/test/wang.html'
     print filename
     fp = open(filename,'wb')
     runner = htmltestrunner.HTMLTestRunner(
