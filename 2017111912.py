@@ -2,7 +2,7 @@
 import unittest
 import json
 import requests
-import htmltestrunner
+#import htmltestrunner
 #from datetime import datetime
 import time
 
