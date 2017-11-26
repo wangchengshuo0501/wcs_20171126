@@ -2,7 +2,7 @@
 import unittest
 import json
 import requests
-#import htmltestrunner
+import htmltestrunner
 #from datetime import datetime
 import time
 
@@ -78,16 +78,16 @@ class ApiTest(unittest.TestCase):
         return res['status']
 
 if __name__ == '__main__':
-    unittest.main()
-    # suite = unittest.TestSuite()
-    # suite.addTest(ApiTest("test_delent_activity"))
-    # filename = r'F:\auto\test\0923\1119.html'
-    # print filename
-    # fp = open(filename,'wb')
-    # runner = htmltestrunner.HTMLTestRunner(
-        # stream=fp,
-        # title='testresult',
-        # description='testreport'
-    # )
-    # runner.run(suite)
-    # fp.close()
+    #unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(ApiTest("test_delent_activity"))
+    filename = r'F:\auto\test\0923\1119.html'
+    print filename
+    fp = open(filename,'wb')
+    runner = htmltestrunner.HTMLTestRunner(
+        stream=fp,
+        title='testresult',
+        description='testreport'
+    )
+    runner.run(suite)
+    fp.close()
